@@ -1,0 +1,21 @@
+[core]
+	editor = vim
+	askpass =
+[user]
+	email = fatnic388@gmail.com
+	name = Dave Nicholson
+[credential]
+	helper = cache
+  timeout = 3600
+[github]
+	user = fatnic
+[diff]
+	tool = vimdiff
+[merge]
+	tool = vimdiff
+[difftool]
+	prompt = false
+[push]
+    default = simple
+[push]
+    default = matching
