@@ -5,7 +5,7 @@ import PTN
 
 PARSE_FOLDER  = "/home/dave/Torrents/Completed"
 MOVIE_FOLDER  = "/home/media/Movies"
-TVSHOW_FOLDER = "/home/media/Movies"
+TVSHOW_FOLDER = "/home/media/TV Shows"
 
 files_to_parse = []
 
