@@ -8,4 +8,6 @@ setxkbmap gb
 
 sh ~/.fehbg
 
+compton &
+
 exec bspwm

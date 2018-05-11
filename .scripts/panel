@@ -1,0 +1,8 @@
+#!/bin/sh
+
+readonly main_font="Monaco-8"
+readonly icon_font="Font Awesome-9"
+
+source bar-colors.sh
+
+~/.scripts/panel_bar | lemonbar -g x20 -f "$main_font" -f "$icon_font" -B "$BG" -F "$FG"
