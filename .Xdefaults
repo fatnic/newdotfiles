@@ -56,7 +56,7 @@ URxvt.geometry: 150x40
 ! ------------------------------------------------------------------------------
 
 ! --- special colors ---
-*background: #0d1926
+*background: [90]#0d1926
 *foreground: #d9e6f2
 
 ! --- standard colors ---
