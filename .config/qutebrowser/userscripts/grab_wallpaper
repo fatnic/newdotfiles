@@ -1,0 +1,7 @@
+#!/bin/bash
+
+if [ -n "$1" ]
+then
+    echo "download -d /home/dave/Pictures/Wallpaper $1" >> "$QUTE_FIFO"
+    exit;
+fi

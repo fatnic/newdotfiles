@@ -12,4 +12,5 @@ sh ~/.fehbg
 
 compton &
 
+xrdb ~/.Xresources
 exec bspwm

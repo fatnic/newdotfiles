@@ -27,7 +27,7 @@ super + Escape
 
 # quit bspwm normally
 super + alt + Escape
-	pkill -9 panel && bspc quit
+	pkill -9 polybar && bspc quit
 
 # close and kill
 super + {_,shift + }w

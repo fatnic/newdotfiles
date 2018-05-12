@@ -41,7 +41,8 @@ Battery() {
 
 
 while true; do
-    echo -e "%{c}$(get_title) \
-             %{r}$(Battery) | $(get_time) $(get_date)" 
+    echo -e "%{r}\
+             %{c}$(get_title) \
+             %{r}$(Battery) | $(get_time) $(get_date)  " 
     sleep 1;
 done

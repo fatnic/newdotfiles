@@ -1,4 +1,4 @@
-BG="#cc151515"
+BG="#77151515"
 FG="#eeffffff"
 
 ACTIVE="#92b8cf"
