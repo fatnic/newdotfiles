@@ -15,7 +15,7 @@ super + b
 
 #ranger
 super + r
-    urxvt -e ranger
+    urxvt -t ranger -e ranger
 
 # make sxhkd reload its configuration files:
 super + Escape
@@ -132,4 +132,7 @@ XF86Audio{Lower,Raise}Volume
 
 XF86AudioMute
     pactl set-sink-mute 0 toggle
+
+XF86MonBrightness{Down,Up}
+    xbacklight -{dec,inc} 10
     

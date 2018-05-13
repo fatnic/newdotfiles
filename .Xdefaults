@@ -9,7 +9,7 @@ Xft.rgba:       rgb
 Xft.dpi:        96
 
 !Fonts
-URxvt.font: xft:Monaco:size=8,xft:Monospace:size=8,xft:TerminessPowerline:size=12
+URxvt.font: xft:Monaco:size=8,xft:Monospace:size=8,xft:Font Awesome 5 Free:size=10,xft:TerminusPowerline:size=12
 URxvt.boldFont: xft:Monaco:style=Bold:size=8
 URxvt.letterSpace: -1
 
@@ -98,4 +98,4 @@ URxvt.geometry: 150x40
 ! --- end of terminal colors section -------------------------------------------
 ! ------------------------------------------------------------------------------
 
-Xcursor.theme: comix
+Xcursor.theme: comixcursors-black
