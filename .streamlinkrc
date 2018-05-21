@@ -1,0 +1,5 @@
+player=mpv --cache 2048
+player-no-close
+
+twitch-oauth-token=6c0vb3kx69l4jzw55igj63hueb1xkx
+

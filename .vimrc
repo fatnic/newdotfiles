@@ -29,6 +29,9 @@ set t_ut=
 
 colorscheme badwolf
 
+set path+=**
+set wildmenu
+
 set number
 set numberwidth=3
 
