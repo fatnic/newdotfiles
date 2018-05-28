@@ -51,6 +51,8 @@ URxvt.keysym.M-s:           perl:keyboard-select:search
 URxvt*scrollWithBuffer: true
 URxvt*scrollTtyKeypress: true
 
+URxvt*visualBell:  true
+
 URxvt.geometry: 150x40
 
 ! --- ~/.Xresources ------------------------------------------------------------
