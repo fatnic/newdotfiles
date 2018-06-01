@@ -105,4 +105,5 @@ URxvt.geometry: 150x40
 ! --- end of terminal colors section -------------------------------------------
 ! ------------------------------------------------------------------------------
 
-Xcursor.theme: comixcursors-black
+Xcursor.theme: ComixCursors-Black
+

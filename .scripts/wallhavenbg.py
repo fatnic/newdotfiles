@@ -7,10 +7,9 @@ import shutil
 from bs4 import BeautifulSoup
 
 WALL_ID = sys.argv[1].split('/')[-1]
+
 DL_URL = "https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-{}.{}"
 DL_PATH = "/home/dave/Pictures/Wallpaper/wallhaven-{}.{}"
-
-print(sys.argv[1])
 
 page = requests.get(sys.argv[1], headers = { 'User-agent' : 'Mozilla/5.0' })
 soup = BeautifulSoup(page.text, 'html.parser')
@@ -25,5 +24,3 @@ if r.status_code == 200:
         shutil.copyfileobj(r.raw, f)
     wallpaper_path = DL_PATH.format(WALL_ID, wall_ext)
     os.system('feh --bg-fill {}'.format(wallpaper_path)) 
-
-
