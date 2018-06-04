@@ -5,6 +5,7 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim'
+Plugin 'bling/vim-airline'
 Plugin 'scrooloose/nerdtree'
 Plugin 'tpope/vim-commentary'
 Plugin 'jiangmiao/auto-pairs'
@@ -12,6 +13,7 @@ Plugin 'godlygeek/tabular'
 Plugin 'ervandew/supertab'
 Plugin 'tpope/vim-endwise'
 Plugin 'easymotion/vim-easymotion'
+Plugin 'kien/ctrlp.vim'
 
 Plugin 'sjl/badwolf'
 
@@ -30,9 +32,6 @@ set t_ut=
 set t_vb=
 
 colorscheme badwolf
-
-set path+=**
-set wildmenu
 
 set number
 set numberwidth=3
@@ -77,6 +76,7 @@ nnoremap <Cr> :nohlsearch<Cr>
 " This allows buffers to be hidden if you've modified a buffer.
 " This is almost a must if you wish to use buffers in this way.
 set hidden
+set showtabline=1
 " To open a new empty buffer
 " This replaces :tabnew which I used to bind to this mapping
 nmap <leader>T :enew<cr>
@@ -89,3 +89,18 @@ map <C-h> :bprevious<CR>
 nmap <leader>bq :bp <BAR> bd #<CR>
 " Show all open buffers and their status
 nmap <leader>bl :ls<CR>
+
+"
+" **** AIRLINE ****
+"
+" Don't show seperators
+let g:airline_left_sep=''
+let g:airline_right_sep=''
+"
+" Enable the list of buffers
+let g:airline#extensions#tabline#enabled = 1
+" Show just the filename
+let g:airline#extensions#tabline#fnamemod = ':t'"
+" Use powerline fonts
+let g:airline_powerline_fonts = 1
+

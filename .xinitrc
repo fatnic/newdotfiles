@@ -6,7 +6,7 @@ xset fp rehash
 export LANG=en_GB.UTF-8
 setxkbmap gb
 
-xsetroot -cursor_name arrow
+xsetroot -cursor_name left_ptr &
 
 sh ~/.fehbg
 
