@@ -15,6 +15,11 @@ Plugin 'tpope/vim-endwise'
 Plugin 'easymotion/vim-easymotion'
 Plugin 'kien/ctrlp.vim'
 
+" HTML/ JS / JSX 
+Plugin 'pangloss/vim-javascript'
+Plugin 'mxw/vim-jsx'
+Plugin 'alvan/vim-closetag'
+
 Plugin 'sjl/badwolf'
 
 call vundle#end()
@@ -104,3 +109,5 @@ let g:airline#extensions#tabline#fnamemod = ':t'"
 " Use powerline fonts
 let g:airline_powerline_fonts = 1
 
+" Something else
+let g:closetag_filenames = '*.html,*.xhtml,*.phtml,*.js,*.jsx'

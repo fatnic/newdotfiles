@@ -2,7 +2,7 @@
 
 sxhkd &
 
-bspc monitor -d I II III IV V VI VII VIII
+bspc monitor -d browser code files media download misc
 
 bspc config border_width     2
 bspc config window_gap       6
@@ -13,5 +13,6 @@ bspc config borderless_monocle   true
 bspc config gapless_monocle      true
 
 bspc rule -a ranger floating=on
+bspc rule -a google-chrome desktop=^1 follow=on state=fullscreen
 
 $HOME/.scripts/polybar_launch
