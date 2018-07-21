@@ -14,5 +14,6 @@ bspc config gapless_monocle      true
 
 bspc rule -a ranger floating=on
 bspc rule -a google-chrome desktop=^1 follow=on state=fullscreen
+bspc rule -a Godot_Engine state=floating
 
 $HOME/.scripts/polybar_launch

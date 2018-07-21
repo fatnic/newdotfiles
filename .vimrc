@@ -14,11 +14,14 @@ Plugin 'ervandew/supertab'
 Plugin 'tpope/vim-endwise'
 Plugin 'easymotion/vim-easymotion'
 Plugin 'kien/ctrlp.vim'
+Plugin 'junegunn/vim-easy-align'
 
 " HTML/ JS / JSX 
 Plugin 'pangloss/vim-javascript'
 Plugin 'mxw/vim-jsx'
 Plugin 'alvan/vim-closetag'
+
+Plugin 'calviken/vim-gdscript3'
 
 Plugin 'sjl/badwolf'
 
@@ -26,6 +29,7 @@ call vundle#end()
 filetype plugin indent on
 
 autocmd! bufwritepost .vimrc source %
+
 
 set exrc
 syntax on
@@ -74,6 +78,8 @@ let mapleader=","
 
 " no need to shift
 nnoremap ; :
+
+autocmd FileType lua nmap <leader>r :w<cr>:!love . %<cr>
 
 " Disable search highlights on enter
 nnoremap <Cr> :nohlsearch<Cr>
