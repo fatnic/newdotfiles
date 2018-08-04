@@ -1,0 +1,30 @@
+#! /bin/sh
+
+wid=$1
+class=$2
+instance=$3
+
+/* if [ "$instance" = fontforge ] ; then */
+/* 	title=$(xtitle "$wid") */
+/* 	case "$title" in */
+/* 		Layers|Tools|Warning) */
+/* 			echo "focus = off" */
+/* 			;; */
+/* 	esac */
+/* fi */
+
+if [ "$instance" = "mpv" ] ; then
+	title=$(xtitle "$wid")
+    echo "state=floating"
+    exit 0
+fi
+
+if [ -z "$class_name" ] ; then
+    tries_left=20
+    while [ "$tries_left" -gt 0 ] ; do
+        xprop -id "$wid" WM_CLASS | grep "not found" > /dev/null || break
+        sleep 0.05
+        tries_left=$((tries_left - 1))
+    done
+    if [ "$tries_left" -gt 0 ] ; then ... fi
+fi

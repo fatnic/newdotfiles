@@ -18,6 +18,9 @@ super + b
 super + c
     google-chrome-stable
 
+super + g
+    godot
+
 #ranger
 super + r
     urxvt -t ranger -e ranger

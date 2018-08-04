@@ -12,8 +12,12 @@ bspc config split_ratio          0.52
 bspc config borderless_monocle   true
 bspc config gapless_monocle      true
 
-bspc rule -a ranger floating=on
-bspc rule -a google-chrome desktop=^1 follow=on state=fullscreen
-bspc rule -a Godot_Engine state=floating
+bspc config external_rules_command "$(which external_rules)"
+
+bspc rule -a urxvt state=floating
+bspc rule -a ranger:* state=floating
+bspc rula -a mpv:* state=floating
+
+bspc rule -a Godot:* state=floating
 
 $HOME/.scripts/polybar_launch

@@ -13,5 +13,9 @@ sh ~/.fehbg
 compton &
 dropbox &
 
+
 xrdb ~/.Xresources
 exec bspwm
+
+
+# exec i3
