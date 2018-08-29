@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+STREAMER=$1
+
+nohup streamlink twitch.tv/$STREAMER 720p60 &
+nohup qutebrowser "https://twitch.tv/popout/${STREAMER}/chat?popout=" &

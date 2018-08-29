@@ -21,8 +21,6 @@ Plugin 'pangloss/vim-javascript'
 Plugin 'mxw/vim-jsx'
 Plugin 'alvan/vim-closetag'
 
-Plugin 'calviken/vim-gdscript3'
-
 Plugin 'sjl/badwolf'
 
 call vundle#end()

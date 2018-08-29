@@ -1,0 +1,6 @@
+rofi.theme: ~/.cache/wal/colors-rofi-dark.rasi
+
+rofi.font: Monaco 10
+rofi.lines: 8
+rofi.fake-transparency: true
+

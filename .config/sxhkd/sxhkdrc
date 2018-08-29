@@ -7,8 +7,10 @@ super + Return
 	urxvt
 
 # program launcher
-super + @space
-	dmenu_run -fn "Monaco-8"
+super + space
+    rofi -show run
+    # dmenu_runner
+	# dmenu_run -fn "Monaco-8" -nb "$color0" -nf "$color15" -sb "$color1" -sf "$color15"
 
 
 # Browsers
@@ -24,6 +26,9 @@ super + g
 #ranger
 super + r
     urxvt -t ranger -e ranger
+
+super + e
+    scrot
 
 # make sxhkd reload its configuration files:
 super + Escape

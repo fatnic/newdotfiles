@@ -8,14 +8,15 @@ setxkbmap gb
 
 xsetroot -cursor_name left_ptr &
 
-sh ~/.fehbg
+# use pywal now
+wal -R
+# sh ~/.fehbg
 
 compton &
 dropbox &
 
+systemctl --user import-environment DISPLAY
 
 xrdb ~/.Xresources
 exec bspwm
 
-
-# exec i3

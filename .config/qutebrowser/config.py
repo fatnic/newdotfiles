@@ -1655,6 +1655,7 @@ config.bind('Yi', 'hint images download')
 config.bind(',i', 'hint images download')
 config.bind(',w', 'hint links spawn wallhavenbg.py {hint-url}')
 config.bind(',t', 'hint links spawn transmission-remote -a {hint-url}')
-config.bind(',s', 'hint links spawn streamlink {hint-url} 720p60')
+config.bind(',s', 'hint links spawn streamlink {hint-url} best')
+config.bind(',l', 'hint links spawn twitch_launcher {hint-url}')
 
 config.bind(';q', 'quit')

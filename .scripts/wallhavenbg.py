@@ -23,4 +23,5 @@ if r.status_code == 200:
         r.raw.decode_content = True
         shutil.copyfileobj(r.raw, f)
     wallpaper_path = DL_PATH.format(WALL_ID, wall_ext)
-    os.system('feh --bg-fill {}'.format(wallpaper_path)) 
+    # os.system('feh --bg-fill {}'.format(wallpaper_path)) 
+    os.system('wal -i {}'.format(wallpaper_path)) 
