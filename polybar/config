@@ -59,7 +59,7 @@ modules-right = torrents wired-network wireless-network volume battery date
 tray-position = right
 tray-padding = 2
 tray-transparent = false
-tray-background = #99222222
+tray-background = ${colors.background}
 
 wm-restack = bspwm
 
@@ -139,7 +139,7 @@ time-alt = %H:%M:%S
 format-prefix = %{T5}%{T-}
 format-prefix-foreground = ${colors.foreground}
 /* format-underline = #0a6cf5 */
-format-underline = ${colors.foreground-alt}
+label-underline= ${colors.primary}
 
 label = %date% %time%
 
@@ -178,9 +178,11 @@ type = internal/battery
 battery = BAT1
 adapter = ACAD
 full-at = 98
+label-underline= ${colors.primary}
 
 format-charging = <animation-charging> <label-charging>
-format-charging-underline = #ffb52a
+/* format-charging-underline = #ffb52a */
+format-charging-underline = ${colors.primary}
 
 format-discharging = <ramp-capacity> <label-discharging>
 format-discharging-underline = ${self.format-charging-underline}
@@ -220,6 +222,7 @@ label-focused-padding = 2
 
 label-occupied = %index%
 label-occupied-padding = 2
+label-occupied-underline= ${colors.foreground-alt}
 
 label-urgent = %index%!
 label-urgent-background = ${colors.alert}
@@ -235,7 +238,7 @@ type = custom/script
 exec = transmission_count_active
 interval = 5
 label = %{T3}%{T-} %output%
-label-underline = ${colors.foreground-alt}
+label-underline= ${colors.primary}
 click-left = urxvt -e stig
 
 
@@ -243,6 +246,7 @@ click-left = urxvt -e stig
 type = internal/network
 interface = enp3s0
 format-connected = <label-connected>
+label-underline= ${colors.primary}
 
 label-connected = %{T3}%{T-} %local_ip%
 
@@ -251,5 +255,6 @@ label-connected = %{T3}%{T-} %local_ip%
 type = internal/network
 interface = wlp2s0
 format-connected = <label-connected>
+label-underline= ${colors.primary}
 
 label-connected = %{T3}%{T-} %local_ip%

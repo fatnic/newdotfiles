@@ -22,6 +22,7 @@ Plugin 'mxw/vim-jsx'
 Plugin 'alvan/vim-closetag'
 
 Plugin 'sjl/badwolf'
+Plugin 'dylanaraps/wal.vim'
 
 call vundle#end()
 filetype plugin indent on
@@ -38,7 +39,8 @@ set t_ut=
 
 set t_vb=
 
-colorscheme badwolf
+" colorscheme badwolf
+colorscheme wal
 
 set number
 set numberwidth=3
