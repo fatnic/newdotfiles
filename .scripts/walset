@@ -1,0 +1,4 @@
+#!/bin/sh
+
+wal -i $1
+echo 'Opacity=0.9' >> /home/dave/.cache/wal/colors-konsole.colorscheme

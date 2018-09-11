@@ -24,4 +24,4 @@ if r.status_code == 200:
         shutil.copyfileobj(r.raw, f)
     wallpaper_path = DL_PATH.format(WALL_ID, wall_ext)
     # os.system('feh --bg-fill {}'.format(wallpaper_path)) 
-    os.system('wal -i {}'.format(wallpaper_path)) 
+    os.system('walset {}'.format(wallpaper_path)) 

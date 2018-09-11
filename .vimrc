@@ -17,12 +17,14 @@ Plugin 'kien/ctrlp.vim'
 Plugin 'junegunn/vim-easy-align'
 
 " HTML/ JS / JSX 
-Plugin 'pangloss/vim-javascript'
-Plugin 'mxw/vim-jsx'
-Plugin 'alvan/vim-closetag'
+" Plugin 'pangloss/vim-javascript'
+" Plugin 'mxw/vim-jsx'
+" Plugin 'alvan/vim-closetag'
 
 Plugin 'sjl/badwolf'
 Plugin 'dylanaraps/wal.vim'
+
+" Plugin 'valloric/youcompleteme'
 
 call vundle#end()
 filetype plugin indent on
@@ -105,10 +107,10 @@ nmap <leader>bl :ls<CR>
 " **** AIRLINE ****
 "
 " Don't show seperators
-let g:airline_left_sep=''
-let g:airline_right_sep=''
-let g:airline#extensions#tabline#left_sep = ' '
-let g:airline#extensions#tabline#left_alt_sep = '|'
+" let g:airline_left_sep=''
+" let g:airline_right_sep=''
+" let g:airline#extensions#tabline#left_sep = ' '
+" let g:airline#extensions#tabline#left_alt_sep = '|'
 "
 " Enable the list of buffers
 let g:airline#extensions#tabline#enabled = 1

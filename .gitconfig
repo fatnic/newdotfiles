@@ -1,12 +1,13 @@
 [core]
 	editor = vim
-	askpass =
+	; askpass =
 [user]
 	email = fatnic388@gmail.com
 	name = Dave Nicholson
 [credential]
 	helper = cache
-  timeout = 3600
+    timeout = 3600
+    username = fatnic
 [github]
 	user = fatnic
 [diff]
