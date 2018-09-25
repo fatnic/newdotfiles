@@ -34,4 +34,7 @@ bspc rule -a mpv:* state=floating
 
 bspc rule -a Godot:* state=floating
 
+bspc rule -a SFML state=floating
+bspc rule -a GLFWWindow state=floating
+
 $HOME/.scripts/polybar_launch

@@ -1,0 +1,7 @@
+#!/bin/bash
+
+touch src/$1.cpp
+touch include/$1.h
+
+printf "#include \"$1.h\"\n\n$1::$1() {\n\n};\n\n$1::~$1() {\n\n};" >> src/$1.cpp
+printf "#pragma once\n\nclass $1 {\npublic:\n\t$1();\n\t~$1();\n};" >> include/$1.h

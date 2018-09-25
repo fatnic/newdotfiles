@@ -4,7 +4,8 @@
 
 # terminal emulator
 super + Return
-	konsole
+    urxvt
+	# konsole
 
 # program launcher
 super + space
@@ -25,7 +26,8 @@ super + g
 
 #ranger
 super + r
-    konsole -e ranger
+    urxvt -e ranger 
+    # konsole -e ranger
 
 super + e
     scrot
