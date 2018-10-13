@@ -15,6 +15,9 @@ Plugin 'tpope/vim-endwise'
 Plugin 'easymotion/vim-easymotion'
 Plugin 'kien/ctrlp.vim'
 Plugin 'junegunn/vim-easy-align'
+Plugin 'dbakker/vim-projectroot'
+
+Plugin 'davisdude/vim-love-docs'
 
 Plugin 'sjl/badwolf'
 Plugin 'dylanaraps/wal.vim'
@@ -74,7 +77,8 @@ let mapleader=","
 " no need to shift
 nnoremap ; :
 
-autocmd FileType lua nmap <leader>r :w<cr>:!love . %<cr>
+autocmd FileType lua nmap <leader>r :w<cr>:ProjectRootExe !love .<cr>
+autocmd FileType python  nmap <leader>r :w<cr>:ProjectRootExe !python %<cr>
 
 " Disable search highlights on enter
 nnoremap <Cr> :nohlsearch<Cr>
@@ -114,3 +118,15 @@ let g:airline_powerline_fonts = 1
 
 " Something else
 let g:closetag_filenames = '*.html,*.xhtml,*.phtml,*.js,*.jsx'
+
+function! <SID>AutoProjectRootCD()
+  try
+    if &ft != 'help'
+      ProjectRootCD
+    endif
+  catch
+    " Silently ignore invalid buffers
+  endtry
+endfunction
+
+autocmd BufEnter * call <SID>AutoProjectRootCD()
