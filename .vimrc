@@ -17,7 +17,10 @@ Plugin 'kien/ctrlp.vim'
 Plugin 'junegunn/vim-easy-align'
 Plugin 'dbakker/vim-projectroot'
 
-Plugin 'davisdude/vim-love-docs'
+Plugin 'alvan/vim-closetag'
+Plugin 'pangloss/vim-javascript'
+
+" Plugin 'davisdude/vim-love-docs'
 
 Plugin 'sjl/badwolf'
 Plugin 'dylanaraps/wal.vim'

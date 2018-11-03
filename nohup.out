@@ -1,0 +1,9 @@
+[cli][info] Found matching plugin twitch for URL twitch.tv/grimmmz
+[plugin.twitch][info] Attempting to authenticate using OAuth token
+[plugin.twitch][info] Successfully logged in as fatnic
+[cli][info] Available streams: audio_only, 160p (worst), 360p, 480p, 720p, 720p60_alt, 720p60 (best)
+[cli][info] Opening stream: 720p60 (hls)
+[cli][info] Starting player: mpv --cache 2048
+[cli][info] Player closed
+[cli][info] Stream ended
+[cli][info] Closing currently open stream...

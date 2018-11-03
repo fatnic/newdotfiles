@@ -11,11 +11,13 @@ WALL_ID = sys.argv[1].split('/')[-1]
 DL_URL = "https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-{}.{}"
 DL_PATH = "/home/dave/Pictures/Wallpaper/wallhaven-{}.{}"
 
+print("Fetching image data")
 page = requests.get(sys.argv[1], headers = { 'User-agent' : 'Mozilla/5.0' })
 soup = BeautifulSoup(page.text, 'html.parser')
 wallpaper = soup.find('img', attrs = { 'id' : 'wallpaper' })
 wall_ext = wallpaper['src'].split('.')[-1]
 
+print("Fetching image")
 r = requests.get(DL_URL.format(WALL_ID, wall_ext), stream = True, headers = { 'User-agent' : 'Mozilla/5.0' })
 
 if r.status_code == 200:

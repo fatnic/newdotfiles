@@ -248,7 +248,8 @@ interface = enp3s0
 format-connected = <label-connected>
 label-underline= ${colors.primary}
 
-label-connected = %{T3}%{T-} %local_ip%
+#label-connected = %{T3}%{T-} %local_ip%
+label-connected = %{T3}%{T-}
 
 
 [module/wireless-network]
@@ -257,4 +258,5 @@ interface = wlp2s0
 format-connected = <label-connected>
 label-underline= ${colors.primary}
 
-label-connected = %{T3}%{T-} %local_ip%
+#label-connected = %{T3}%{T-} %local_ip%
+label-connected = %{T3}%{T-}
